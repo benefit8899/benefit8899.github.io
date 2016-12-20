@@ -22,19 +22,18 @@
 	top: 60px;
 	left: 20px;
 }
-.dot_logotext img{
-	vertical-align: bottom;
-	margin-left: 10px;
-	position:relative;
-}
 .img_logo{
 	background-image: url("../Bai1/logo.png");
 	background-repeat: no-repeat;
 	width:100px;
 }
+.dot_logotext img{
+	
+}
 .textlogo{
 	margin-top:35px;
 	font-size: 40px;
+	
 }
 .bg_main{
 	background-color: #121212;
@@ -97,7 +96,7 @@
 }
 .morebox{
 	width:240px;
-	height: 360px;
+	height: 380px;
 	float:left;
 	background-color: #1f1f1f;
 }
