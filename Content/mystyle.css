@@ -96,7 +96,7 @@
 }
 .morebox{
 	width:240px;
-	height: 380px;
+	height: 360px;
 	float:left;
 	background-color: #1f1f1f;
 }
@@ -149,6 +149,7 @@
 	width:80%;
 	height:100%;
 	margin: auto;
+	font-size: 13px;
 }
 .innermore_title{
 	margin-top: 45px;
