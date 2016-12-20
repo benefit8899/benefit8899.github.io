@@ -1,0 +1,86 @@
+.myheader{
+	width: 100%;
+	height:300px;
+}
+.mybackground{
+	background-image: url("../Bai1/fill_header.jpg");
+	background-position: center;
+	width: 100%;
+}
+.bg_back{
+	background-color: #00AEDA;
+}
+.container{
+	width: 100%;
+	height: 1000px;
+	margin: 0px;
+	position: relative;
+}
+.logo{
+	background-image: url("../Bai1/logo.png");
+	background-repeat: no-repeat;
+	height: 100px;
+	width:100px;
+}
+.textlogo{
+	margin-top:35px;
+	font-size: 30px;
+}
+.bg_main{
+	background-image: url("../Bai1/more.gif");
+	background-position: center;
+	height: 100%;
+	margin-top: -80px;
+}
+.corner{
+	position: absolute;
+	top: 60px;
+	left: 20px;
+}
+.left{
+	float:left;
+}
+.menu{
+	width: auto;
+	height: 120px;
+}
+.menu-item{
+	width: 130px;
+	height: 120px;
+	margin-right: 5px;
+	float: left;
+	background-repeat: no-repeat;
+	color:white;
+	font-size: 20px;
+}
+.menu-icon{
+	background-repeat: no-repeat;
+	height: 100px;
+	width:130px
+}
+.menu-icon1{
+	background: url("../Bai1/m1.jpg") no-repeat -10px -5px;
+}
+
+.menu-icon2{
+	background: url("../Bai1/m2.jpg") no-repeat 0px -5px;
+}
+.menu-icon3{
+	background: url("../Bai1/m3.jpg") no-repeat 0px -5px;
+}
+.menu-icon4{
+	background: url("../Bai1/m4.jpg") no-repeat 0px -5px;
+}
+.menu-icon5{
+	background: url("../Bai1/m5.jpg") no-repeat -5px -5px;
+}
+.position-menu{
+	position: absolute;
+	left: 100px;
+	top: 157px;
+}
+.menu-item-text{
+	position: static;
+	margin: -10px;
+	text-align:center;
+}
