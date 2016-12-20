@@ -1,8 +1,15 @@
-.myheader{
+.container{
+	width: 1263px;
+	height:840px;
+	margin: auto;
+	position: relative;
+	font-family: 'Tahoma';
+}
+.header{
 	width: 100%;
 	height:300px;
 }
-.mybackground{
+.bg_header{
 	background-image: url("../Bai1/fill_header.jpg");
 	background-position: center;
 	width: 100%;
@@ -10,33 +17,32 @@
 .bg_back{
 	background-color: #00AEDA;
 }
-.container{
-	width: 100%;
-	height: 1000px;
-	margin: 0px;
-	position: relative;
-}
 .logo{
-	background-image: url("../Bai1/logo.png");
-	background-repeat: no-repeat;
-	height: 100px;
-	width:100px;
-}
-.textlogo{
-	margin-top:35px;
-	font-size: 30px;
-}
-.bg_main{
-	background-image: url("../Bai1/more.gif");
-	background-position: center;
-	height: 100%;
-	margin-top: -80px;
-}
-.corner{
 	position: absolute;
 	top: 60px;
 	left: 20px;
 }
+.dot_logotext img{
+	vertical-align: bottom;
+	margin-left: 10px;
+	position:relative;
+}
+.img_logo{
+	background-image: url("../Bai1/logo.png");
+	background-repeat: no-repeat;
+	width:100px;
+}
+.textlogo{
+	margin-top:35px;
+	font-size: 40px;
+}
+.bg_main{
+	background-color: #121212;
+	background-position: center;
+	height: 100%;
+	margin-top: -80px;
+}
+
 .left{
 	float:left;
 }
@@ -44,43 +50,130 @@
 	width: auto;
 	height: 120px;
 }
-.menu-item{
+.menu__elem{
 	width: 130px;
 	height: 120px;
 	margin-right: 5px;
 	float: left;
 	background-repeat: no-repeat;
 	color:white;
-	font-size: 20px;
+	font-size: 18px;
+	text-decoration: none;
 }
 .menu-icon{
 	background-repeat: no-repeat;
-	height: 100px;
+	height: 90px;
 	width:130px
-}
-.menu-icon1{
-	background: url("../Bai1/m1.jpg") no-repeat -10px -5px;
-}
-
-.menu-icon2{
-	background: url("../Bai1/m2.jpg") no-repeat 0px -5px;
-}
-.menu-icon3{
-	background: url("../Bai1/m3.jpg") no-repeat 0px -5px;
-}
-.menu-icon4{
-	background: url("../Bai1/m4.jpg") no-repeat 0px -5px;
-}
-.menu-icon5{
-	background: url("../Bai1/m5.jpg") no-repeat -5px -5px;
 }
 .position-menu{
 	position: absolute;
-	left: 100px;
+	left: 70px;
 	top: 157px;
 }
-.menu-item-text{
-	position: static;
-	margin: -10px;
-	text-align:center;
+.a .menu__elemtext{
+	position: absolute;
+	margin: auto;
+	width: 50%;
+	display: inline-block;
+	color: white;
+}
+.a .menu__itemtext .menu__item:link{
+	position: absolute;
+	margin: auto;
+	width: 50%;
+	display: inline-block;
+}
+.outner{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	height: auto;
+}
+.mainbox{
+	width:700px;
+	left:70px;
+	top: 365px;
+	position: absolute;
+}
+.morebox{
+	width:240px;
+	height: 360px;
+	float:left;
+	background-color: #1f1f1f;
+}
+.maininfo{
+	float:left;
+	margin-top: 45px;
+	margin-left:40px;
+}
+.info__elem{
+	width:400px;
+	height: 290px;
+}
+.imgtitle{
+	height: 127px;
+}
+.info__elem__info{
+	width: 90%;
+	margin: auto;
+}
+.imgmore{
+	background-image: url("../Bai1/more.gif");
+	margin-top:20px;
+	width:114px;
+	height:19px;
+}
+.imgsep{
+	background-image: url("../Bai1/sep.gif");
+	height: 1px;
+	width:100%;
+}
+.infosumary{
+	color: #595959;
+}
+.icon_launchwebsite{
+	background-image: url("../Bai1/arr_1.gif");
+	width:12px;
+	height:11px;
+	float: left;
+	margin-top: 18px;
+}
+.icon_launchwebsite--text{
+	color: #ffffff;
+	font-size:12px;
+	float:left;
+	margin-left:5px;
+	margin-top:15px;
+	text-decoration: none;
+}
+.innermore{
+	width:80%;
+	height:100%;
+	margin: auto;
+}
+.innermore_title{
+	margin-top: 45px;
+}
+.left-text{
+	font-size: 12px;
+	font-style: normal;
+	color: gray;
+	margin:10px;
+	margin-left:5px;
+}
+.footer {
+	width: 100%;
+	height: 80px;
+	float: left;
+	font-size: 13px;
+	color: #595959;
+}
+.private:link{
+	color: #595959;
+}
+.private:visited{
+	color: #595959;
+}
+.bullets-left{
+	margin-right: 10px;
 }
