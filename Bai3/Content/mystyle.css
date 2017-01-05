@@ -1,114 +1,134 @@
-.container{
-	width: 1263px;
-	margin: 0px auto;
-	background-color: #2d2f35;
+.container {
+    width: 1263px;
+    margin: 0px auto;
+    background-color: #2d2f35;
 }
-.logo{
-	height: 110px;
+
+.logo {
+    height: 110px;
 }
-.logo2{
-	background: url("../Images/home_intro_image.jpg");
-	position: absolute;
-	top: 117px;
-	right: 130px;
-	height: 300px;
-	width: 491px;
+
+.logo2 {
+    background: url("../Images/home_intro_image.jpg");
+    position: absolute;
+    top: 117px;
+    right: 130px;
+    height: 300px;
+    width: 491px;
 }
-.line--gray{
-	background-color: #474a51;
-	height: 1px;
-	margin: 0px;
+
+.line--gray {
+    background-color: #474a51;
+    height: 1px;
+    margin: 0px;
 }
-.line--menu{
-	background: url("../Images/line_center.png");
-	height: 53px;
+
+.line--menu {
+    background: url("../Images/line_center.png");
+    height: 53px;
 }
-.header{
-	height: 250px;
-	background-color: #24262a;
+
+.header {
+    height: 250px;
+    background-color: #24262a;
 }
-.content--text{
-	margin-left: 130px;
-	width: 400px;
-	text-align: justify;
-	color: white;
-	font-family: verdana;
-	font-size: 12px;
-	display: inline-block;
-	position: relative;
+
+.content--text {
+    margin-left: 130px;
+    width: 400px;
+    text-align: justify;
+    color: white;
+    font-family: verdana;
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
 }
-.header--title--text{
-	color: #ffff00;
-	font-family: "Simsun";
-	font-weight: bold;
-	font-size: 23px;
-	margin: 0px;
-	margin-bottom: 30px;
+
+.header--title--text {
+    color: #ffff00;
+    font-family: "Simsun";
+    font-weight: bold;
+    font-size: 23px;
+    margin: 0px;
+    margin-bottom: 30px;
 }
-.border--top{
-	border-style: solid;
-	border-color: #474a51;
-	border-width: 1px 0px 0px 0px;
+
+.border--top {
+    border-style: solid;
+    border-color: #474a51;
+    border-width: 1px 0px 0px 0px;
 }
-.menu{
-	height: 140px;
-	width: 100%;
+
+.menu {
+    height: 140px;
+    width: 100%;
 }
-.menu--center{
-	margin: 20px 165px;
-	display: inline-block;
+
+.menu--center {
+    margin: 20px 165px;
+    display: inline-block;
 }
-.stt--top--right{
-	position: absolute;
-	top: -85px;
-	right: 8px;
+
+.stt--top--right {
+    position: absolute;
+    top: -85px;
+    right: 8px;
 }
-.menu--elem{
-	height: 102px;
-	width: 220px;
-	margin: 0px 6px;
-	position: relative;
+
+.menu--elem {
+    height: 102px;
+    width: 220px;
+    margin: 0px 6px;
+    position: relative;
 }
-.main{
-	height: 380px;
-	border-style: solid;
-	border-color: #474a51;
-	border-width: 1px 0px 0px 0px;
+
+.main {
+    height: 380px;
+    border-style: solid;
+    border-color: #474a51;
+    border-width: 1px 0px 0px 0px;
 }
-.main--title--text{
-	margin-bottom: 0px;
+
+.main--title--text {
+    margin-bottom: 0px;
 }
-.main--title--text2{
-	margin-bottom: 30px;
+
+.main--title--text2 {
+    margin-bottom: 30px;
 }
-.main-content--text{
-	margin: 0px;
-	height: 100%;
+
+.main-content--text {
+    margin: 0px;
+    height: 100%;
 }
-.main-content--text--right{
-	margin: 0px;
-	float: right;
-	display: inline-block;
-	margin-right: 130px;
-	background: url("../Images/home_services_bg_marketing.gif") no-repeat;
+
+.main-content--text--right {
+    margin: 0px;
+    float: right;
+    display: inline-block;
+    margin-right: 130px;
+    background: url("../Images/home_services_bg_marketing.gif") no-repeat;
 }
-.main-content--text--left{
-	background: url("../Images/home_services_bg_design.gif") no-repeat;
-	background-position: 250px 200px;
-	padding-bottom: 30px;
+
+.main-content--text--left {
+    background: url("../Images/home_services_bg_design.gif") no-repeat;
+    background-position: 250px 200px;
+    padding-bottom: 30px;
 }
-.bottom{
-	background-image: url("../Images/bg_footer.gif");
-	background-repeat: no-repeat;
-	background-position: 130px 22px; 
-	height: 120px;
-	background-color: #24262a;
-	width: 100%;
+
+.bottom {
+    background-image: url("../Images/bg_footer.gif");
+    background-repeat: no-repeat;
+    background-position: 130px 22px;
+    height: 120px;
+    background-color: #24262a;
+    width: 100%;
 }
-.bottom--text{
-	margin: auto;
-	color: white;
-	font-family: verdana;
-	font-size: 12px;
-	width: 350px;
+
+.bottom--text {
+    margin: auto;
+    color: white;
+    font-family: verdana;
+    font-size: 12px;
+    width: 350px;
 }
