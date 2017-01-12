@@ -2,15 +2,18 @@
     position: relative;
     width: 985px;
     background-color: #292728;
+    margin: auto;
     padding-top: 25px;
-    margin: -8px auto;
+
     overflow: auto;
     font-family: Tahoma;
+    color: #494949;
 }
 
 .left-col {
     width: 655px;
     float: left;
+    margin-left: 3px;
 }
 
 .topnew {
@@ -36,6 +39,7 @@
     font-size: 14px;
     margin: 0px;
     margin-left: 5px;
+    color: #4b4b4b;
 }
 
 .topnews--line {
@@ -58,6 +62,7 @@
     font-size: 12px;
     margin-right: 23px;
     text-decoration: none;
+    color: #4b4b4b;
 }
 
 .topnewsmore1 {
@@ -97,6 +102,7 @@
     background-color: white;
     width: 317px;
     float: left;
+    margin-left: 1px;
 }
 
 .moviestrailer--right {
@@ -122,6 +128,7 @@
 }
 
 .moviestrailer--title2 {
+    padding-top: 4px;
     background: url("../images/h2-top-movie-trailers-bg2.gif") repeat-x;
 }
 
@@ -131,10 +138,11 @@
 
 .moviestrailerextends--title {
     padding-left: 15px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     height: 30px;
     font-weight: bold;
+    font-family: 'Times new roman';
 }
 
 .moviestrailer--contents--photo {
@@ -184,7 +192,7 @@
     color: #1081bb;
     text-decoration: none;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 11px;
     margin-left: 8px;
     position: relative;
     top: -3px;
@@ -218,7 +226,7 @@
 
 .nowshowing--icon2 {
     background-image: url("../Images/entertainment-icons.gif");
-    margin: 3px 10px;
+    margin: -2px 10px;
     margin-bottom: 5px;
     background-position: 0px -165px;
 }
@@ -228,7 +236,7 @@
     font-size: 12px;
     margin: 0px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 6px;
     display: inline-block;
 }
 
@@ -237,7 +245,7 @@
     color: gray;
     float: right;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 6px;
     text-decoration: none;
 }
 
@@ -301,7 +309,7 @@
 }
 
 .right-col {
-    width: 330px;
+    width: 327px;
     float: left;
 }
 

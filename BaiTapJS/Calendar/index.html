@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Demo slider</title>
+    <link href="Content/mystyle.css" rel="stylesheet" />
+    <script src="Javascript/mycalendar.js" type="text/javascript"></script>
+</head>
+<body class="container">
+    <div class="main">
+        <input type="text" id="dtpDate" />
+        <div class="calendar">
+            <div class="controler">
+                <input type="button" class="controler backs" />
+                <input type="button" class="controler back" />
+                <select id="selectermonth" class="controler"></select>
+                <select id="selecteryear" class="controler"></select>
+                <input type="button" class="controler next" />
+                <input type="button" class="controler nexts" />
+            </div>
+            <div class="dayofweeks">
+            </div>
+        </div>
+    </div>
+    <script>
+        calendar("dtpDate");
+    </script>
+</body>
+</html>

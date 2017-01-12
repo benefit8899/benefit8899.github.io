@@ -1,0 +1,30 @@
+
+.main{
+    margin: auto;
+    background-color: #808080;
+    width: 800px;
+}
+.controler{
+    height: 30px;
+}
+.dayofweeks{
+    margin-top: 10px;
+}
+#selectermonth{
+}
+.dayofweek--elem{
+    border: solid white 1px;
+    color: red;
+    width: 60px;
+    height: 30px;
+    margin-top: 2px;
+    margin-right: 2px;
+    background-color: lavenderblush;
+}
+.days
+{
+    background-color: #ffffff;
+}
+.daynull{
+    background-color: transparent;
+}

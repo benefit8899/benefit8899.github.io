@@ -39,16 +39,16 @@
     text-align: justify;
     color: white;
     font-family: verdana;
-    font-size: 12px;
+    font-size: 11px;
     display: inline-block;
     position: relative;
 }
 
 .header--title--text {
     color: #ffff00;
-    font-family: "Simsun";
+    font-family: 'Book Antiqua';
     font-weight: bold;
-    font-size: 23px;
+    font-size: 22px;
     margin: 0px;
     margin-bottom: 30px;
 }
@@ -112,7 +112,7 @@
 
 .main-content--text--left {
     background: url("../Images/home_services_bg_design.gif") no-repeat;
-    background-position: 250px 200px;
+    background-position: 250px 150px;
     padding-bottom: 30px;
 }
 
