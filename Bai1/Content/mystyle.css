@@ -3,6 +3,7 @@
     margin: auto;
     position: relative;
     font-family: 'Tahoma';
+    background-color: gray;
 }
 
 .header {
@@ -40,6 +41,7 @@
 .textlogo {
     margin-top: 35px;
     font-size: 40px;
+    font-family: 'Yu Gothic UI Semibold';
 }
 
 .bg_main {
@@ -107,14 +109,14 @@
 .morebox {
     width: 240px;
     background-color: #1f1f1f;
-    padding: 40px 0;
+    padding: 40px 0 20px 0;
     float:left;
 }
 
 .maininfo {
     float: left;
     margin-top: 45px;
-    margin-left: 35px;
+    margin-left: 30px;
 }
 
 .info__elem {

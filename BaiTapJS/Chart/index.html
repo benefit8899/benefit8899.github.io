@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <script src="JS/jquery-1.6.min.js" type="text/javascript"></script>
+    <script src="JS/chart.js" type="text/javascript"></script>
+    <script src="JS/data.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var data = {
+                RankValues: Rank,
+                colors: ["#4267b1", "#db3d26", "#f8991d", "#189747"],
+            };
+            Chart.renderDonut("donutChart", data);
+        });
+    </script>
+</head>
+<body>
+    <div class="chart">
+        <canvas id="donutChart"></canvas>
+    </div>
+
+</body>
+</html>
