@@ -1,0 +1,9 @@
+.chart{
+    margin: auto;
+    width: 1000px;
+    height: 1000px;
+    background-color: lightgray;
+}
+#donutChart{
+    background-color: white;
+}
