@@ -4,6 +4,12 @@
     height: 1000px;
     background-color: lightgray;
 }
+#barChart{
+    background-color: white;
+}
+#barChartTitle{
+    background-color: white;
+}
 #donutChart{
     background-color: white;
 }
