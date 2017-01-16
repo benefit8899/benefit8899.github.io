@@ -202,7 +202,7 @@ var Chart = function () {
                         noteY - 5,
                         10,
                         10,
-                        options.colors[indexlvo]);
+                        options.colors[indexlvo % this.colors.length]);
                 drawText(
                     ctx,
                     noteX + options.textNoteMarginLeft,
