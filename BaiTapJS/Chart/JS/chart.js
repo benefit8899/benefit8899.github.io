@@ -1,8 +1,5 @@
 var Chart = function () {
-    //save array rankValues and array color
-    //var color;
-    //var rankValues;
-
+    //methods support
     //method draw line
     function drawLine(ctx, startX, startY, endX, endY, color, lineWidth) {
         if (lineWidth !== undefined)
@@ -51,7 +48,7 @@ var Chart = function () {
         ctx.closePath();
         ctx.fill();
     }
-
+    
     //Module draw a donutchart
     var DonutChart = function (options) {
 
@@ -189,7 +186,8 @@ var Chart = function () {
             else
                 noteY = this.longitude;
             for (var indexlvo = 0; indexlvo < listValuesOther.length; indexlvo++) {
-                drawArc(
+                if (options.noteStyle === 'circle')
+                    drawArc(
                     ctx,
                     noteX,
                     noteY,
@@ -197,8 +195,14 @@ var Chart = function () {
                     0,
                     2 * 3.14,
                     options.colors[indexlvo]);
-
-                //drawRectangle(ctx, noteX, noteY, 10, 10, options.colors[indexlvo]);
+                else
+                    drawRectangle(
+                        ctx,
+                        noteX,
+                        noteY - 5,
+                        10,
+                        10,
+                        options.colors[indexlvo]);
                 drawText(
                     ctx,
                     noteX + options.textNoteMarginLeft,
@@ -207,72 +211,6 @@ var Chart = function () {
                     options.fontNotecolor, options.fontNote);
                 noteY += options.noteLineSpacing;
             }
-        }
-    }
-    //Module draw a barchat title
-    var BarChartTitle = function (options) {
-        var font = "13px Arial";
-        var fontcolor = "black";
-        this.dataInput = options.dataInput;
-        this.ctx = options.ctx;
-        this.heightTitle = options.heightTitle;
-        this.titleColor = options.titleColor;
-        this.titleText = options.titleText;
-        this.draw = function () {
-            drawRectangle(this.ctx,
-                0,
-                0,
-                ctx.canvas.clientWidth,
-                this.heightTitle,
-                this.titleColor);
-        }
-    }
-    //Module draw a barchart
-    var BarChart = function (options) {
-        var ctx = options.ctx;
-        var widthColumn = 60;
-        var heightTitle = 30;
-        //parameter design chart
-        var columnColor = 'gray';
-        var titleColor = '#d3eef8';
-        var titleTextColor = 'black';
-        var font = "13px Arial";
-        var marginToTitle = 10;
-        var columnSpace = 5;
-
-        var column_elem_height = 20;
-        this.rankValues = options.dataInput.rankValues;
-        this.rankColor = options.dataInput.colors;
-        this.draw = function () {
-            var max = 0;
-            for (var categ in rankValues) {
-                var val = rankValues[categ];
-                if (val > max)
-                    max = val;
-            }
-            ctx.textAlign = 'center';
-            var haftcellWidth = (widthColumn / 2);
-            var haftcellHeight = (heightTitle / 2) + 5;
-            //draw column value number
-            for (var i = widthColumn; i < (max + 5) * widthColumn; i += widthColumn) {
-                drawRectangle(ctx, i - widthColumn, 0, widthColumn, heightTitle, titleColor);
-                var posTextX = i - haftcellWidth;
-                drawText(ctx, posTextX, haftcellHeight, i / widthColumn, titleTextColor, font);
-                drawLine(ctx, i, 0, i, ctx.canvas.clientHeight, columnColor, 0.1);
-            }
-            //draw value into chart
-            var i = 0;
-            for (var categ in rankValues) {
-                var val = rankValues[categ];
-                drawRectangle(
-                    ctx,
-                    0,
-                    heightTitle + marginToTitle + i * (column_elem_height + columnSpace),
-                    val * widthColumn,
-                    column_elem_height,
-                    this.rankColor[i++]);
-            }
-
         }
     }
     //render excute donut chart
@@ -298,6 +236,7 @@ var Chart = function () {
         var textNoteMarginLeft = 15;
         var marginNoteToDonut = 100;
         var noteLineSpacing = 25;
+        var noteStyle = 'rect'        //  circle/rect
         //text in donut
         var fontText = fontNote;
         var fontTextColor = "white";
@@ -325,49 +264,12 @@ var Chart = function () {
             boundaryWidth: boundaryWidth,
             textNoteMarginLeft: textNoteMarginLeft,
             marginNoteToDonut,
-            noteLineSpacing: noteLineSpacing
+            noteLineSpacing: noteLineSpacing,
+            noteStyle: noteStyle
         });
         donutChart.draw();
     }
-    //render excute barchart
-    function renderBarChart(barChartTitleId, barChartId, dataInput) {
-        var titleText = "Rank";
-        //use to draw title of every bar
-        var canvasTitle = document.getElementById(barChartTitleId);
-        //use to draw bar
-        var canvasChart = document.getElementById(barChartId);
-        var height = 200;
-        //width of area Title of BarChart
-        canvasTitle.width = 300;
-        canvasTitle.height = height;
-        //width of area Chart of BarChart
-        canvasChart.width = 500;
-        canvasChart.height = height;
-        ctxtitle = canvasTitle.getContext("2d");
-        ctxchart = canvasChart.getContext("2d");
-        rankValues = dataInput.rankValues;
-        colors = dataInput.colors;
-        //parameter to design chart
-        var heightTitle = 30;
-        var heightElement = 40;
-        var titleColor = "#dddee1";
-        var barChartTitle = new BarChartTitle({
-            ctx: ctxtitle,
-            dataInput: dataInput,
-            heightTitle: heightTitle,
-            heightElement: heightElement,
-            titleColor: titleColor,
-            titleText: titleText
-        });
-        barChartTitle.draw();
-        var barchart = new BarChart({
-            ctx: ctxchart,
-            dataInput: dataInput
-        });
-        barchart.draw();
-    }
     return {
         renderDonut: renderDonut,
-        renderBarChart: renderBarChart
     }
 }();

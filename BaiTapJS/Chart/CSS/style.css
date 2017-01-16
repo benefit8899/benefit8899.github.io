@@ -3,6 +3,7 @@
     width: 1000px;
     height: 1000px;
     background-color: lightgray;
+    text-align: center;
 }
 #barChart{
     background-color: white;
@@ -12,4 +13,5 @@
 }
 #donutChart{
     background-color: white;
+    margin: auto;
 }
