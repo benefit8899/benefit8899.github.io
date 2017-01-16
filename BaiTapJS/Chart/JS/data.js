@@ -1,9 +1,4 @@
-var Rank = {
-    "Xuất sắc": 4,
-    "Tốt": 6,
-    "Trung bình": 5,
-    "Kém": 3
-};
+
 function Project(name, level) {
     this.nameProject = name;
     this.levelOfPosition = level;
