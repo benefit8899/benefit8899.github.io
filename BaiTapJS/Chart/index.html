@@ -9,8 +9,12 @@
     <script type="text/javascript">
         $(document).ready(function () {
             var data = {
-                RankValues: Rank,
-                colors: ["#4267b1", "#db3d26", "#f8991d", "#189747"],
+                chartName: "BIỂU ĐỒ TỈ LỆ LEVEL OF POSITION",
+                listValues: lstProject,
+                listColors: ["#3366cc", "#dc3912", "#ff9900", "#109618"],
+                widthChart: 500,
+                heightChart: 400,
+                radius: 100
             };
             Chart.renderDonut("donutChart", data);
         });
@@ -20,6 +24,5 @@
     <div class="chart">
         <canvas id="donutChart"></canvas>
     </div>
-
 </body>
 </html>
