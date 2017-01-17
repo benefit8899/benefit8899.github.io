@@ -1,17 +1,28 @@
-.chart{
+.chart {
     margin: auto;
     width: 1000px;
     height: 1000px;
     background-color: lightgray;
     text-align: center;
 }
-#barChart{
+
+#barChart {
     background-color: white;
 }
-#barChartTitle{
+
+#barChartTitle {
     background-color: white;
 }
-#donutChart{
+
+#donutChart {
     background-color: white;
     margin: auto;
+}
+
+#tip {
+    background-color: white;
+    position: absolute;
+    left: -200px;
+    top: 100px;
+    border: solid blue 1px;
 }
