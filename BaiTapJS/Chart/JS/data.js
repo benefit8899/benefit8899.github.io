@@ -1,27 +1,45 @@
-
-function Project(name, level) {
-    this.nameProject = name;
-    this.levelOfPosition = level;
-    return this;
-}
-//create data list project
-var lstProject = [
-    new Project('A', 0),
-    new Project('B', 4),
-    new Project('C', 1),
-    new Project('D', 3),
-    new Project('E', 4),
-    new Project('F', 4),
-    new Project('F', 5),
-    new Project('F', 6),
-    new Project('F', 4),
-    new Project('F', 4),
-    new Project('F', 4),
-    new Project('F', 4),
-    new Project('F', 7),
-    new Project('F', 1),
-    new Project('F', 1),
-    new Project('F', 1),
-    new Project('F', 4),
-    new Project('F', 4),
-    new Project('G', 4)];
+var data = {
+    widthChart: 500,
+    heightChart: 1000,
+    chartName: "BIỂU ĐỒ TỈ LỆ LEVEL OF POSITION",
+    listColors: ["#3366cc", "#dc3912", "#ff9900", "#109618"],     //use to custom color areas donut
+    //titleFont: "bold 12pt Tahoma",
+    //titleColor: "blue",
+    //titleMarginToTop: 40,
+    //noteFont: "bold 20pt Times new roman",
+    //noteColor: "blue",
+    noteStyle: "rect",      //circle/rect
+    //noteColorSpacing: 25,
+    //donutFont: "bold 12pt Arial",
+    //donutColor: "white",
+    //donutStart: -Math.PI / 2,              //defaul 12h -> - Math.PI / 2 (radian unit)
+    //donutTop: 110,
+    //donutLeft: 100,
+    ////donutHoldSize: 0.6,                     
+    //donutSmallFont: "italic bold 10pt Times new roman",
+    ////donutSmallColor: "Red",
+    //noteMarginToDonut: 100,
+    textNoteMarginLeft: 15,
+    //donutSmallBoxWidth: 50,
+    //donutSmallBoxHeight: 25,
+    //boundaryWidth: 0.02,                    //white lines device area between 2 donut slice
+    noteIconWidth: 10,
+    radius: 100,                                //not null
+    listValues: [{ x: 'A', y: 0 },
+                { x: 'A', y: 2 },
+                { x: 'A', y: 2 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 3 },
+                { x: 'B', y: 4 },
+                { x: 'B', y: 5 },
+                { x: 'B', y: 5 },
+                { x: 'B', y: 4 }, ]
+};
