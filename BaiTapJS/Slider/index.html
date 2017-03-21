@@ -1,25 +1,30 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Demo slider</title>
-    <link href="Content/mystyle.css" rel="stylesheet" />
-    <script src="Javascript/myscript.js" type="text/javascript"></script>
-
+	<title>JavaSript Exercise 1</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
-<body class="container">
-    <div id="main">
-        <div id="wrap-slider">
-            <div id="slider">
-                <img class="slide-box" src="Images/image1.jpg" />
-                <img class="slide-box" src="Images/image2.jpg" />
-                <img class="slide-box" src="Images/image3.jpg" />
-                <img class="slide-box" src="Images/image4.jpg" />
-            </div><!-- end #slider -->
-        </div><!-- end #wrap-slider  -->
-        <span id="prev-slide">Previous</span><span id="next-slide">Next</span>
-    </div><!-- end #main -->
-    <script>
-        slider();
-    </script>
+<body onload="onLoad()">
+	<div class="main">
+		<div>
+			<div class="slideDisplay">
+				<div class="slide" id="slide">
+					<img class="slideBox" src="images/image1.jpg" alt=""/>
+					<img class="slideBox" src="images/image2.jpg" alt=""/>
+					<img class="slideBox" src="images/image3.jpg" alt=""/>
+					<img class="slideBox" src="images/image4.jpg" alt=""/>
+				</div>
+			</div>
+			<div id="prev"></div>
+			<div id="next"></div>
+		</div>
+		<div class="quickChoose">
+			<img class="quickChoose__img" src="images/image1.jpg" alt="" onclick="slide(0)"/>
+			<img class="quickChoose__img" src="images/image2.jpg" alt="" onclick="slide(1)"/>
+			<img class="quickChoose__img" src="images/image3.jpg" alt="" onclick="slide(2)"/>
+			<img class="quickChoose__img" src="images/image4.jpg" alt="" onclick="slide(3)"/>
+		</div>
+	</div>
+	<script src="js/mySlider.js"></script>
 </body>
 </html>

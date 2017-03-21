@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JavaScript Exercise 3</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="calendar/style.css">
+</head>
+
+<body onload="onLoad()">
+	<div class="main">
+		<form id="form_signin" method="post" name="form_signin" action="http://vanloi.esy.es/check.php">
+			<table>
+				<tr class="rowForm">
+					<td class="title">Username:</td>
+					<td><input type="text" name="username" value="" onchange="checkUsername()" id="username" class="input" /></td>
+					<td>
+						<p id="usernameAlert"></p>
+					</td>
+				</tr>
+				<tr class="rowForm">
+					<td class="title">Password:</td>
+					<td><input type="password" name="password" value="" onchange="checkPassword()" id="password" class="input" /></td>
+					<td>
+						<p id="passwordAlert"></p>
+					</td>
+				</tr>
+				<tr class="rowForm">
+					<td class="title">Email:</td>
+					<td><input type="email" name="email" value="" onchange="checkEmail()" id="email" class="input" /></td>
+					<td>
+						<p id="emailAlert"></p>
+					</td>
+				</tr>
+				<tr class="rowForm">
+					<td class="title">Birthday:</td>
+					<td>
+						<div id="container">
+							<div class="datePicker" id="datePicker">
+								<input type="text" onclick="inputClick()" name="dateSelected" id="dateSelected" class="input" />
+							</div>
+						</div>
+					</td>
+					<td>
+						<p id="birdthdayAlert"></p>
+					</td>
+				</tr>
+				<tr class="rowForm">
+					<td colspan="2">
+						<div>
+							<input type="submit" name="btnSubmit" value="Submit" id="btnSubmit" onclick="return sendRequest()" class="button" />
+							<input type="reset" name="btnReset" value="Refresh" class="button" onclick="resetValue()" />
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<script src="calendar/myCalendar.js"></script>
+	<script src="js/mycheck.js"></script>
+</body>
+
+</html>
