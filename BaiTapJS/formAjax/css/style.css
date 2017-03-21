@@ -1,0 +1,29 @@
+.main {
+	margin: auto;
+}
+#usernameAlert, #passwordAlert, #emailAlert ,#birdthdayAlert {
+	color: #F00;
+}
+.rowForm {
+	height: 60px;
+	text-align: center;
+}
+.title {
+	text-align: right;
+	width: 150px;
+}
+.button {
+	width: 71px;
+	height: 30px;
+	text-align: center;
+	background-color: cadetblue;
+	color: #FFF;
+	border: none;
+}
+.input:forcus {
+	background-color: white;
+}
+.button:hover {
+	color: red;
+	background-color: white;
+}

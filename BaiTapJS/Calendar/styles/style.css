@@ -1,0 +1,82 @@
+.datePicker {
+	width: 460px;
+	min-height: 31px;
+	background-color: #999999;
+	margin: auto;
+	padding: 10px;
+}
+#calendar {
+	width: 460px;
+	min-height: 300px;
+	text-align: center;
+	display: none;
+	padding: 5px;
+}
+.row {
+	width: 460px;
+	height: 5px;
+	border: 2px solid #999999;
+}
+.col {
+	width: 60px;
+	height: 20px;
+	border: 2px solid #999999;
+	background-color: #A9CCE3;
+	background-size: 40px 20px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.nextday{
+	background-image: url('../images/next.png');
+}
+.backday{
+	background-image: url('../images/back.png');
+}
+.nextmonth{
+	background-image: url('../images/nexts.png');
+}
+.backmonth{
+	background-image: url('../images/backs.png');
+}
+.day {
+	width: 60px;
+	height: 30px;	
+	background-color: #BEBEBE;
+	border: 2px solid #999999;
+}
+.input-group-addon.info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(57, 179, 215);
+    border-color: rgb(38, 154, 188);
+}
+.activeDate {
+	width: 60px;
+	height: 30px;
+	background-color:#FBFCFC;
+	border: 2px solid #999999;
+}
+.deactiveDate {
+	width: 60px;
+	height: 30px;
+	color: white;
+	background-color: #3c3c3c;
+	border: 2px solid #999999;
+}
+.currentDate{
+	width: 60px;
+	height: 30px;
+	background-color: #00ACE6;
+	border: 2px solid #999999;
+}
+.comboboxYear {
+	width: 58px;
+	height: 30px;
+}
+.comboboxMonth {
+	width: 120px;
+	height: 30px;
+}
+.comboboxMonth, .comboboxYear {
+	font-size: 14px;
+	line-height: 30px;
+}
